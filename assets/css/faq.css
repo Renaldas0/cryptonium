@@ -1,0 +1,8 @@
+.header-bg {
+    background: url("../images/crypto-bg.jpg");
+}
+
+.table {
+    width: 100%;
+    display: flex;
+}
