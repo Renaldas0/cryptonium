@@ -1,0 +1,25 @@
+.header-bg {
+    background: url("../images/crypto-bg.jpg");
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.about-header {
+    font-size: 50px;
+}
+
+.image-container {
+    height: 500px;
+
+    aspect-ratio: 1/1;
+}
+
+.image-container img {
+    height: 100%;
+    float: right;
+}
