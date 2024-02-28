@@ -2,7 +2,58 @@
     background: url("../images/crypto-bg.jpg");
 }
 
+.faq-header {
+    margin: 40px 0;
+    font-size: 2rem;
+}
+
 .table {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.firstDiv {
+    float: left;
+    width: 49%;
+    grid-area: 1 / 1 / 6 / 3;
+    margin-right: 15px;
+}
+
+.secondDiv {
+    width: 49%;
+    float: right;
+    grid-area: 1 / 3 / 6 / 5;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.faq-question {
+    background: var(--muted);
+    padding: 20px 15px;
     display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.expand {
+    display: block;
+}
+
+.close {
+    display: none;
 }
