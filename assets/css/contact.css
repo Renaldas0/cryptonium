@@ -2,6 +2,69 @@
     background: url("../images/crypto-bg.jpg");
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.contact-info h2 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+form {
+    background: #ffffff;
+    box-shadow: 2px 4px 10px #000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: .5em;
+}
+
+form label {
+    color: var(--muted-darker);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 0.5em;
+    outline: none;
+    border: 1px solid var(--muted);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 1px solid var(--gold);
+}
+
+form button {
+    cursor: pointer;
+}
+
+.names {
+    display: flex;
+    gap: 30px;
+}
+
+.submit-btn {
+    width: 20%;
+    border-radius: 0.5em;
+    border: none;
+    background-color: var(--gold);
+    padding: 10px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
