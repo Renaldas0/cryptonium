@@ -1,0 +1,10 @@
+.header-bg {
+    background: url("../images/crypto-bg.jpg");
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}

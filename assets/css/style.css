@@ -8,6 +8,10 @@
     font-weight: 400;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 :root {
     --gold: #ffd900;
     --white: #fff;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     <link rel="icon" href="../assets/images/logo-coins.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0fc8d7e1ea.js" crossorigin="anonymous"></script>
     <title>Cryptonium</title>
@@ -22,16 +22,24 @@
                 <a href="./contact.html">Contact Us</a>
             </nav>
         </header>
+        
         <main class="container">
-            <h2 class="faq-header">Frequently asked questions</h2>
-            <div id="table">
-                <div class="firstDiv">
-
-                </div>
-                <div class="secondDiv">
-
-                </div>
+            <div>
+                <h2 class="contact-header">Contact us</h2>
+                <p>Have more questions for us or just need to get in touch? Fill out the form with your inquiry.</p>
             </div>
+            <form class="contact-form">
+                <div>
+                    <label for="fname">First name*</label>
+                    <input name="fname" type="text" required>
+                    <label for="lname">Last name</label>
+                    <input name="lname" type="text">
+                </div>
+                <label for="email">Email*</label>
+                <input name="email" type="email" required>
+
+                <textarea name="query" id="query" cols="30" rows="10" placeholder="What can we help you with?"></textarea>
+            </form>
         </main>
 
         <footer>

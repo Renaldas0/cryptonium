@@ -57,11 +57,12 @@ firstSlice.map((faq) => {
         <span class="question-text">${faq.question}</span>
         <span class="arrows-container">
             <span class="expand"><i class="fa-solid fa-arrow-down"></i></span>
+            <span class="close"><i class="fa-solid fa-arrow-up"></i></span>
         </span>
     </div>
     <div class="faq-answer">
         <span class="answer-text">${faq.answer}</span>
-        <span class="close"><i class="fa-solid fa-arrow-up"></i></span>
+        
     </div>
     `;
 
@@ -77,6 +78,7 @@ secondSlice.map((faq) => {
     <div class="faq-question">
         <span class="question-text">${faq.question}</span>
         <span class="arrows-container">
+            <span class="expand"><i class="fa-solid fa-arrow-down"></i></span>
             <span class="close"><i class="fa-solid fa-arrow-up"></i></span>
         </span>
     </div>
@@ -89,6 +91,11 @@ secondSlice.map((faq) => {
     secondDiv.append(article);
 })
 
-faqsTable.addEventListener('click', function (e) {
-    e.target.closest('.faq-question')
+const arrowsContainer = document.querySelectorAll('.arrows-container');
+
+arrowsContainer.forEach((item) => {
+    item.addEventListener('click', function (e) {
+        const parent = e.currentTarget.parentElement.parentElement;
+        parent.classList.toggle('show-answer')
+    })
 })

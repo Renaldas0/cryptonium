@@ -32,6 +32,8 @@
 .faq-item {
     margin-bottom: 20px;
     font-size: 20px;
+    border-radius: 0.5em;
+    overflow: hidden;
 }
 
 .faq-question {
@@ -39,7 +41,6 @@
     padding: 20px 15px;
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
 }
 
 .faq-answer {
@@ -47,6 +48,9 @@
     margin-top: 10px;
     padding: 15px;
     justify-content: space-between;
+}
+
+.arrows-container {
     cursor: pointer;
 }
 
@@ -56,4 +60,23 @@
 
 .close {
     display: none;
+}
+
+.show-answer .faq-answer {
+    display: flex;
+}
+
+.show-answer .close {
+    display: inline;
+}
+
+.show-answer .expand {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
