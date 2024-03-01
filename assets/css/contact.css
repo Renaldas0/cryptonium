@@ -1,5 +1,14 @@
-.header-bg {
+/* .header-bg {
     background: url("../images/crypto-bg.jpg");
+} */
+
+.contact-bg {
+    background: url("../images/crypto-bg.jpg");
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    margin-top: -100px;
+    z-index: -1;
 }
 
 .contact-container {
@@ -8,6 +17,7 @@
     margin-top: 100px;
     gap: 20px;
     position: relative;
+    color: var(--white);
 }
 
 .contact-info h2 {
