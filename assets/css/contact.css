@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    gap: 20px;
+    position: relative;
 }
 
 .contact-info h2 {
@@ -67,6 +69,7 @@ form button {
 
 footer {
     position: fixed;
+    margin-top: 20px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
@@ -77,5 +80,20 @@ footer {
         flex-wrap: wrap;
         gap: 30px;
         justify-content: start
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .names {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .names div {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
     }
 }
