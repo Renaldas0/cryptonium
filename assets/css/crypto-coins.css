@@ -44,3 +44,21 @@ main {
     color: var(--muted-darker);
     margin-left: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .summary-table {
+        max-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    main {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .crypto-news {
+        width: 100%;
+        margin-left: 0;
+    }
+}
