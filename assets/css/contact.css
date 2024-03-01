@@ -71,3 +71,11 @@ footer {
     left: 50%;
     transform: translate(-50%);
 }
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: start
+    }
+}
