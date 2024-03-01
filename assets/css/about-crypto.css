@@ -30,7 +30,7 @@
 }
 
 .image-container {
-    height: 500px;
+    max-height: 500px;
     aspect-ratio: 1/1;
 }
 
@@ -83,4 +83,35 @@ aside {
     width: 100%;
     font-size: 18px;
     line-height: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+    .about-section {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .how-it-works-section {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .how-it-works-section h6 {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

@@ -105,13 +105,14 @@ nav {
 }
 
 .trending {
-    height: 40vh;
+    min-height: 40vh;
 }
 
 .capitalizations {
     margin-top: 90px;
     height: 100%;
     display: flex;
+    gap: 10px;
     align-items: start;
     justify-content: space-between;
 }
@@ -186,6 +187,24 @@ footer p {
     .container {
         padding-inline: 5%;
     }
+
+    nav {
+        gap: 20px;
+    }
+
+    .market-update {
+        width: 100%;
+    }
+
+    .summary-table {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .capitalizations {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
