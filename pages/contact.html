@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact us about anything crypto related with your questions that you have about cryptocurrency right here on Cryptonium.">
     <link href="../assets/images/crypto-bg.webp">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/contact.css">
@@ -25,7 +27,7 @@
             <a href="./faq.html">FAQ</a>
             <a href="./contact.html" class="active">Contact Us</a>
         </nav>
-        <button class="menu-btn">
+        <button aria-label="menu button" class="menu-btn">
             <i class="fa fa-bars"></i>
         </button>
     </header>
@@ -51,15 +53,17 @@
             <div class="names">
                 <div>
                     <label for="fname">First name*</label>
-                    <input name="fname" type="text" required>
+                    <input id="fname" name="fname" type="text" required>
                 </div>
                 <div>
                     <label for="lname">Last name</label>
-                    <input name="lname" type="text">
+                    <input id="lname" name="lname" type="text">
                 </div>
             </div>
-            <label for="email">Email*</label>
-            <input class="email-input" name="email" type="email" required>
+            <div class="email">
+                <label for="email">Email*</label>
+                <input id="email" class="email-input" name="email" type="email" required>
+            </div>
 
             <textarea name="query" id="query" cols="30" rows="10" placeholder="What can we help you with?"></textarea>
 
@@ -68,10 +72,10 @@
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/renaldasbendikas/" target="_blank">
+        <a href="https://www.linkedin.com/in/renaldasbendikas/" target="_blank" aria-label="External link to Linkedin account">
             <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/Renaldas0" target="_blank">
+        <a href="https://github.com/Renaldas0" target="_blank" aria-label="External link to Github account">
             <i class="fa-brands fa-github"></i>
         </a>
         <p>Copyright &copy; Renaldas Bendikas</p>

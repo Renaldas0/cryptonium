@@ -79,7 +79,7 @@ form button {
 
 footer {
     position: fixed;
-    margin-top: 20px;
+    margin-top: 10px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
@@ -89,7 +89,8 @@ footer {
     .contact-container {
         flex-wrap: wrap;
         gap: 30px;
-        justify-content: start
+        justify-content: start;
+        margin-top: 20px;
     }
 }
 
@@ -105,5 +106,36 @@ footer {
 
     .submit-btn {
         width: 100%;
+    }
+
+    .contact-info h2 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+    }
+
+    .contact-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url("../images/mobile-bg.webp");
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        padding: 20px 10px;
+    }
+
+    form input {
+        margin-bottom: 10px;
+        width: 60%;
+        padding: 5px;
+        float: right;
+    }
+
+    .email {
+        display: flex;
+        justify-content: space-between;
     }
 }

@@ -2,6 +2,10 @@
     background: url("../images/crypto-bg.webp");
 }
 
+main {
+    height: 73vh;
+}
+
 .faq-header {
     margin: 40px 0;
     font-size: 2rem;
@@ -74,18 +78,17 @@
     display: none;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-
 @media screen and (max-width: 1076px) {
 
     .firstDiv,
     .secondDiv {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 480px) {
+    .header-bg {
+        background: url("../images/mobile-bg.webp");
+        background-position: center 150px;
+    }
 }
