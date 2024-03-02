@@ -222,3 +222,18 @@ footer p {
         gap: 30px;
     }
 }
+
+@media screen and (max-width: 486px) {
+    .background {
+        height: 70vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/mobile-bg.jpg');
+        background-position: -20px center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        height: 100vh;
+        background-position: -60px center;
+    }
+}
