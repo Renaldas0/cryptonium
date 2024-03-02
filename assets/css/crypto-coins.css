@@ -26,7 +26,7 @@ main {
     padding: 20px 0;
 }
 
-.news h3 {
+.news h2 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -60,5 +60,12 @@ main {
     .crypto-news {
         width: 100%;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-bg {
+        background: url("../images/mobile-bg.webp");
+        background-position: center 150px;
     }
 }
